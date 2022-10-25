@@ -22,10 +22,10 @@ public Query(RendezVousRepository r, LogementRepository l) {
     return this.rendezVousRepository.getListeRendezVous();
     }
     public List<RendezVous> allRendezVousByLogementRef(int reference){return this.rendezVousRepository.getListeRendezVousByLogementRef(reference);}
-//    public List<RendezVous> allRendezVousById(int id){return this.rendezVousRepository.getLogementByRDV(id);}
 
-//    public List<Logement> allLogementList(){return this.logementRepository.getAllLogements();}
-//    public List<Logement> allLogementByType(String type){return this.logementRepository.getLogementsByType(Logement.Type.valueOf(type));}
-//    public Logement getLogementByRef(int reference){return this.logementRepository.getLogementsByReference(reference);}
+
+    public List<Logement> allLogementList(){return this.logementRepository.getAllLogements();}
+//    public List<Logement> getLogementByType(String type){return this.logementRepository.getLogementsByType(Logement.Type.valueOf(type));}
+    public Logement getLogementByRef(int reference){return this.logementRepository.getLogementsByReference(reference);}
 
 }

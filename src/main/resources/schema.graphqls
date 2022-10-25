@@ -26,6 +26,13 @@ type Query {
     allRendezVousList:[RendezVous]
     allRendezVousByLogementRef(reference:Int):[RendezVous]
 
+    allLogementList:[Logement]
+    getLogementByRef(reference:Int):[Logement]
+
+
+
+
+
 }
 type Mutation {
     createRendezVous(id:Int,date:String,heure:String,refLog :Int, num:String):RendezVous
